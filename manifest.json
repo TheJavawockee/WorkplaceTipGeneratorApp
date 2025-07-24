@@ -1,14 +1,19 @@
 {
-  "name": "Love Notes",
-  "short_name": "LoveNotes",
-  "start_url": ".",
+  "name": "Random Work Tips",
+  "short_name": "WorkTips",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#fff0f5",
-  "theme_color": "#ffb6c1",
+  "background_color": "#e8f0fe",
+  "theme_color": "#1a73e8",
   "icons": [
     {
       "src": "icon.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

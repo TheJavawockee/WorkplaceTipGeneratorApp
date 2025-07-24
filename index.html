@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Work Tip Generator</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#1a73e8" />
+<link rel="icon" href="icon.png" />
+
 
 </head>
 <body>
@@ -24,5 +28,14 @@
   <div id="tip">Select a category and click “Next Tip” to start!</div>
 
   <script src="app.js"></script>
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('✅ Service Worker Registered'))
+      .catch(error => console.error('❌ Service Worker Error:', error));
+  }
+</script>
+
 </body>
 </html>
